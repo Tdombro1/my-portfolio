@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume & Projects - Tyler Dombrowski</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            background: #2c3e50;
+            color: #fff;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-brand {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .profile-pic {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid #fff;
+        }
+
+        nav h1 {
+            font-size: 1.5rem;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #3498db;
+        }
+
+        section {
+            padding: 6rem 0 4rem;
+            background: linear-gradient(135deg, #5a6a7a 0%, #4a5568 100%);
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            text-align: center;
+            color: #fff;
+        }
+
+        .resume-content {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .resume-section {
+            margin-bottom: 3rem;
+        }
+
+        .resume-section h3 {
+            color: #fff;
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            border-bottom: 3px solid #fff;
+            padding-bottom: 0.5rem;
+        }
+
+        .project-item {
+            background: #fff;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .project-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .project-item h4 {
+            color: #667eea;
+            font-size: 1.4rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .project-item .project-date {
+            color: #999;
+            font-size: 0.9rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .project-item p {
+            color: #555;
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+
+        .project-item ul {
+            list-style-position: inside;
+            color: #555;
+            margin-bottom: 1rem;
+        }
+
+        .project-item ul li {
+            margin-bottom: 0.5rem;
+            padding-left: 1rem;
+        }
+
+        .project-links {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .project-link {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background: #667eea;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+            font-size: 0.9rem;
+        }
+
+        .project-link:hover {
+            background: #764ba2;
+        }
+
+        .accomplishment-item {
+            padding: 1rem;
+            margin-bottom: 1rem;
+            border-left: 4px solid #667eea;
+            background: #f9f9f9;
+        }
+
+        .accomplishment-item strong {
+            color: #2c3e50;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="container">
+            <div class="nav-brand">
+                <img src="Selfie Portrait3.png" alt="Tyler Dombrowski" class="profile-pic">
+                <h1>Tyler Dombrowski</h1>
+            </div>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About & Contact</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="resume.html">Resume</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Resume Section -->
+    <section id="resume">
+        <div class="container">
+            <h2>Resume & Projects</h2>
+            <div class="resume-content">
+
+                <!-- Projects Subsection -->
+                <div class="resume-section">
+                    <h3>📊 Data Science Projects</h3>
+
+                    <div class="project-item">
+                        <h4>First Python Project</h4>
+                        <p class="project-date">2024</p>
+                        <p>In this project, I demonstrated fundamental Python and data analysis skills working with
+                            real-world datasets. This project showcases my ability to handle the complete data analysis
+                            workflow from data cleaning to functional programming.</p>
+                        <ul>
+                            <li>Imported and utilized essential data science libraries (Pandas, NumPy)</li>
+                            <li>Cleaned and preprocessed DataFrames to ensure data quality</li>
+                            <li>Corrected data inconsistencies and handled missing values</li>
+                            <li>Navigated complex DataFrames to extract specific information</li>
+                            <li>Created custom functions to streamline and automate data analysis tasks</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://cnt-5e5c8cf7-4bf4-4bc9-a8d5-52e184f479d4.containerhub.tripleten-services.com/notebooks/notebook.ipynb"
+                                class="project-link" target="_blank">📓 View Notebook</a>
+                        </div>
+                    </div>
+
+                    <div class="project-item">
+                        <h4>Instacart Market Basket Analysis</h4>
+                        <p class="project-date">2024</p>
+                        <p>Conducted comprehensive data analysis on Instacart's market basket data to uncover shopping
+                            patterns and consumer behavior insights. This project demonstrates advanced data cleaning
+                            techniques and analytical skills applied to real-world e-commerce data.</p>
+                        <ul>
+                            <li>Explored and cleaned multiple DataFrames from Instacart's dataset</li>
+                            <li>Fixed data quality issues and removed duplicate values to ensure accuracy</li>
+                            <li>Created analytical tables to answer key business questions about customer behavior</li>
+                            <li>Performed data analysis to identify purchasing patterns and trends</li>
+                            <li>Drew actionable conclusions from processed data to inform business decisions</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://cnt-4b1ee759-4ef3-469d-b752-5c0088804c18.containerhub.tripleten-services.com/notebooks/notebook.ipynb"
+                                class="project-link" target="_blank">📓 View Notebook</a>
+                        </div>
+                    </div>
+
+                    <div class="project-item">
+                        <h4>Megaline Consumer Plan Analysis</h4>
+                        <p class="project-date">2024</p>
+                        <p>Performed an in-depth analysis of Megaline's consumer plan data to evaluate user behavior and
+                            revenue generation across different subscription plans. This project showcases end-to-end
+                            analytical capabilities from data preparation through hypothesis testing and visualization.
+                        </p>
+                        <ul>
+                            <li>Cleaned and fixed data quality issues across multiple DataFrames</li>
+                            <li>Grouped and merged DataFrames to enable cross-dataset analysis</li>
+                            <li>Analyzed user behavior patterns based on plan type and usage metrics</li>
+                            <li>Created visual graphs and charts to effectively communicate data insights</li>
+                            <li>Calculated revenue metrics for each subscription plan</li>
+                            <li>Conducted hypothesis testing to validate statistical assumptions</li>
+                            <li>Synthesized findings into comprehensive conclusions and recommendations</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://cnt-56b68d7e-13cf-4a5f-b9ef-b7ea8ae514d1.containerhub.tripleten-services.com/notebooks/project3notebook.ipynb"
+                                class="project-link" target="_blank">📓 View Notebook</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Accomplishments Subsection -->
+                <!-- COMMENTED OUT - Uncomment when ready to use
+                <div class="resume-section">
+                    <h3>🏆 Key Accomplishments</h3>
+
+                    <div class="accomplishment-item">
+                        <strong>Accomplishment Title:</strong> Description of a significant achievement, award,
+                        certification, or recognition you've received.
+                    </div>
+
+                    <div class="accomplishment-item">
+                        <strong>Accomplishment Title:</strong> Another important milestone or achievement in your career
+                        or education.
+                    </div>
+
+                    <div class="accomplishment-item">
+                        <strong>Accomplishment Title:</strong> Additional accomplishment that demonstrates your
+                        expertise and dedication.
+                    </div>
+                </div>
+                -->
+
+                <!-- Education/Experience (Optional) -->
+                <!-- COMMENTED OUT - Uncomment when ready to use
+                <div class="resume-section">
+                    <h3>🎓 Education & Experience</h3>
+
+                    <div class="project-item">
+                        <h4>Job Title or Degree</h4>
+                        <p class="project-date">Company/University | Start Date - End Date</p>
+                        <ul>
+                            <li>Key responsibility or coursework</li>
+                            <li>Achievement or project completed</li>
+                            <li>Skills developed</li>
+                        </ul>
+                    </div>
+                </div>
+                -->
+
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
