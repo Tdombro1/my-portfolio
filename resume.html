@@ -58,20 +58,54 @@
             font-size: 1.5rem;
         }
 
-        nav ul {
-            display: flex;
-            list-style: none;
-            gap: 2rem;
+        .nav-menu {
+            position: relative;
         }
 
-        nav a {
+        .menu-button {
+            background: #3498db;
             color: #fff;
-            text-decoration: none;
-            transition: color 0.3s;
+            padding: 0.7rem 1.5rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: background 0.3s;
         }
 
-        nav a:hover {
-            color: #3498db;
+        .menu-button:hover {
+            background: #2980b9;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            right: 0;
+            background: #2c3e50;
+            min-width: 200px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+            margin-top: 0.5rem;
+            overflow: hidden;
+        }
+
+        .dropdown-content a {
+            color: #fff;
+            padding: 1rem 1.5rem;
+            text-decoration: none;
+            display: block;
+            transition: background 0.3s;
+        }
+
+        .dropdown-content a:hover {
+            background: #34495e;
+        }
+
+        .nav-menu:hover .dropdown-content {
+            display: block;
         }
 
         section {
@@ -188,12 +222,17 @@
                 <img src="Selfie Portrait3.png" alt="Tyler Dombrowski" class="profile-pic">
                 <h1>Tyler Dombrowski</h1>
             </div>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About & Contact</a></li>
-                <li><a href="skills.html">Skills</a></li>
-                <li><a href="resume.html">Resume</a></li>
-            </ul>
+            <div class="nav-menu">
+                <button class="menu-button">
+                    Resume ▼
+                </button>
+                <div class="dropdown-content">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About & Contact</a>
+                    <a href="skills.html">Skills</a>
+                    <a href="resume.html">Resume</a>
+                </div>
+            </div>
         </nav>
     </header>
 
